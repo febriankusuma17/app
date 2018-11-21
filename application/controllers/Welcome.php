@@ -5,7 +5,13 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data=array(
+					'nama'     => 'Febrian Kusuma',
+					'alamat'   => 'Malang',
+					'keahlian' => 'jaringan',
+
+					);
+		$this->load->view('welcome_message',$data);
 	}
 
 	public function about()
