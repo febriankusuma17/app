@@ -25,6 +25,20 @@ class Administrator_model extends CI_Model {
 		return $result;
 	}
 	
+	function dokter(){
+		$this->db->select('*');
+		$this->db->from('dokter');
+		$query 	= $this->db->get();
+		$result	= $query->result();
+		return $result;
+
+	}
+
+	function kontak_kirim($data){
+		$this->db->insert('kontak',$data);
+		}
+
+
 
 	
 }

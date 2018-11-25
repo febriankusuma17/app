@@ -10,10 +10,10 @@
           <ul class="nav">
             <li class="<?php if($title=='Beranda') echo 'active'; ?>"><a href="<?php echo base_url();?>">Beranda</a></li>
             <li class="<?php if($title=='Pendaftaran Online Pasien') echo 'active'; ?>"><a href="<?php echo base_url();?>index.php/Controller_web/pendaftaran">Pendaftaran Pasien</a></li>
-            <li class="<?php if($title=='Cek Token Pasien') echo 'active'; ?>"><a href="services.html">Cek Token Pasien</a></li>
-            <li class="<?php if($title=='Data Dokter') echo 'active'; ?>"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Data Dokter</a></li>
-            <li class="<?php if($title=='Hubungi Kami') echo 'active'; ?>"><a href="doctors.html">Hubungi Kami</a></li>
-            <li><a href="appointment.html">Login Dokter</a></li>
+            <li class="<?php if($title=='Token') echo 'active'; ?>"><a href="#pop-open" class="link popup-vedio video-btn">Cek Token Pasien</a></li>
+            <li class="<?php if($title=='Data Dokter') echo 'active'; ?>"><a href="<?php echo base_url();?>index.php/Controller_web/dokter">Data Dokter</a></li>
+            <li class="<?php if($title=='Hubungi Kami') echo 'active'; ?>"><a href="<?php echo base_url();?>index.php/Controller_web/kontak">Hubungi Kami</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Login_dokter/index">Login Dokter</a></li>
             <li><a href="gallery.html">Login Admin</a></li>
           </ul>
         </div>
