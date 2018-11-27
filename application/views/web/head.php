@@ -8,8 +8,8 @@
 <title><?= $title ?></title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="<?php echo base_url();?>assets/web/images/favicon.ico" type="image/x-icon">
-<link rel="icon" href="<?php echo base_url();?>assets/web/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="<?php echo base_url();?>assets/dokter/images/logo_icon_dark.png" type="image/x-icon">
+<link rel="icon" href="<?php echo base_url();?>assets/dokter/images/logo_icon_dark.png" type="image/x-icon">
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/web/rs-plugin/css/settings.css" media="screen" />

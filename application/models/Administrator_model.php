@@ -7,6 +7,16 @@ class Administrator_model extends CI_Model {
 		return $this->db->query("select * from pasien $where; ");
 	}
 
+	function getPasien0(){
+		return $this->db->query("select * from pasien where progress = '0'; ");
+	}
+
+	function getPasien1(){
+		return $this->db->query("select * from pasien where progress = '1'; ");
+	}
+
+	
+
 
 	function getSpesialis($where = ''){
 		return $this->db->query("select * from spesialis $where; ");

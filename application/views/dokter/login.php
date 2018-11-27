@@ -6,9 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login Dokter</title>
 
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="<?php echo base_url();?>assets/dokter/images/logo_icon_dark.png" type="image/x-icon">
+	<link rel="icon" href="<?php echo base_url();?>assets/dokter/images/logo_icon_dark.png" type="image/x-icon">
+	
 	<!-- Global stylesheets -->
-    <link rel="shortcut icon" href="<?php echo base_url();?>assets/web/images/favicon.ico" type="image/x-icon">
-
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
 	<link href="<?php echo base_url();?>assets/dokter/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
 	<link href="<?php echo base_url();?>assets/dokter/css/bootstrap.css" rel="stylesheet" type="text/css">
