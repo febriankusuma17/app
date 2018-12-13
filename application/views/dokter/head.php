@@ -48,7 +48,7 @@
 
 </head>
 
-<body onload="goforit();" class="layout-boxed navbar-top">
+<body onLoad="goforit();" class="layout-boxed navbar-top">
 
 	<!-- Main navbar -->
 	<div class="navbar navbar-inverse bg-indigo navbar-fixed-top">
@@ -254,7 +254,7 @@
 						<li><a href="#"><span class="badge badge-warning pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
 						<li class="divider"></li>
 						<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
-						<li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+						<li><a href="<?php echo base_url();?>index.php/dokter/logout"><i class="icon-switch2"></i> Logout</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -286,7 +286,7 @@
 
 					<div class="breadcrumb-line">
 						<ul class="breadcrumb">
-							<li><a href="<?php echo base_url(); ?>"><i class="icon-home2 position-left"></i> Home</a></li>
+							<li><a href="<?php echo base_url();?>index.php/dokter"><i class="icon-home2 position-left"></i> Home</a></li>
 							<li class="active">Dashboard</li>
 						</ul>
 

@@ -1,7 +1,23 @@
-<?php
+<?php   
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Administrator_model extends CI_Model {
+
+	function admin_signin($admin_email, $admin_password)
+	{
+		$password_admin	= hash("MD5", $admin_password);
+		$sql	= "SELECT * FROM admin
+					WHERE
+						admin_email = '$admin_email'
+					AND
+						admin_password = '$admin_password'";
+		$query 	= $this->db->query($sql);
+		$result	= $query->row();
+		return $result;
+	}
+	
+
+
 
 	function getPasien($where = ''){
 		return $this->db->query("select * from pasien $where; ");

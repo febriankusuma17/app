@@ -2,6 +2,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Dokter extends CI_Controller {
+	
+	public function __construct()
+	{
+		parent::__construct();
+		$dokter_id = $this->session->userdata('dokter_id');
+		if ($dokter_id == NULL)
+		{
+			redirect('login_dokter');
+			}
+	}
 
 	public function index()
 	{
@@ -38,6 +48,25 @@ class Dokter extends CI_Controller {
 	$this->load->view('dokter/head2',$data);
 	$this->load->view('dokter/proses_perawatan', $data);
 	}
+	
+	function simpan_pemeriksaan()
+	{
+	$data['perawatan_id'] 		  = $this->input->post('perawatan_id',true);
+	$data['dokter_id'] 			  = $this->input->post('dokter_id',true);
+	$data['detail'] 			  = $this->input->post('detail',true);
+	
+	$this->Dokter_model->simpan_proses_pemeriksaan($data);
+	$this->Dokter_model->update_proses_pemeriksaan($data['perawatan_id']);
+	redirect('dokter/pasien');
+	}
+	
+	function logout()
+	{
+	$this->session->unset_userdata('dokter_id');
+	$this->session->unset_userdata('nama_dokter');
+	redirect('login_dokter');
+	}
+	
 
 
 
